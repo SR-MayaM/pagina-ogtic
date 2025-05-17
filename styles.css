@@ -1,3 +1,5 @@
+
+
 .cabezero{
     display: flex;
     align-items: center;
@@ -164,7 +166,8 @@ nav a:hover{
 }
 
 .fondo{
-    background-color: #99C6F0;
+    background-color:rgba(153, 198, 240, 0.2);
+
     color:#003865;
     text-align: start;
 
@@ -200,7 +203,7 @@ main{
 }
 
 .main-contenedor{
-    margin: 48px 17%;
+    margin: 48px 10%;
     
  
    display: flex;
@@ -227,14 +230,16 @@ main{
 }
 
 .aside{
-    flex: 1.5;
+    flex:0.8 ;
     
+    border-right:1px solid gray ;
     
 
 }
 
 .comunicacion{
     flex: 2;
+    margin-left:30px ;
     
 }
 
@@ -248,7 +253,7 @@ main{
 
 .iconos{
  display: flex;
- border: solid gray 2px;
+ border: solid gray 1px;
  border-left: none;
  border-right: none;
  padding: 5px;
@@ -342,11 +347,13 @@ main{
   text-align: left;
   cursor: pointer;
   border: none;
+  transition: .04s;
 }
 
 /* Efecto visual al hacer foco en el botón */
 .ulist button:focus {
-  background: linear-gradient(to bottom, #34a8e2, #127feb);
+  background: rgba(153, 198, 240, 0.2);
+  border-right: solid 4px #003865;
 }
 
 /* Estilo de los submenús ocultos por defecto */
@@ -359,7 +366,7 @@ main{
 /* Mostrar submenús cuando el botón recibe foco */
 .ulist button:focus + ul {
   max-height: 1400px;
-  transition: max-height 1s ease-in;
+  transition: max-height 1s;
 }
 
 /* Estilo de enlaces dentro de los submenús */
@@ -374,7 +381,7 @@ main{
 
 /* Hover sobre enlaces */
 .ulist li ul li a:hover {
-  background-color: rgb(227, 227, 227);
+  background-color: rgba(153, 198, 240, 0.2);
   color: #003865;
 }
 
@@ -383,11 +390,4 @@ main{
   margin: 0 8px;
 }
 
-/* Bordes redondeados para primer y último botón */
-.ulist li:nth-of-type(1) button {
- 
-}
 
-.ulist li:nth-last-of-type(1) button {
-  
-}
