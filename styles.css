@@ -314,69 +314,6 @@ main{
 
 
 
-/*.ulist{
-    list-style: none;
-
-
-    width: 200px;
-   
-}
-
-.ulist button{
-    display: block;
-}
-
-.ulist li ul li a{
-    display: block;
-    font-size: 22px;
-    color: dimgray;
-    background-color: yellow;
-
-}
-
-.ulist li ul li a:hover{
-    background-color: #003865;
-    color: white;
-}
-
-.ulist button{
-    font-weight: bold;
-    background-color: #F04540;
-    text-align: left;
-}
-
-.ulist button:focus{
-    background-color: #003865;
-    color: white;
-}
-
-.ulist button p{
-    background-color: #003865;
-    color: aliceblue;
-    padding: 20px;
-}
-
-.ulist button ul{
-    max-height: 0;
-    transition: max-height 0.5s;
-    overflow: hidden;
-}
-
-.ulist button:focus ul{
-    max-height: 500px;
-    transition: max-height 1s;
-}
-
-.ulist i{
-    margin: 0 8px;
-}
-.ulist li:nth-last-of-type(1) button{
-    border-radius: 0 22px 0 0;
-}
-*/
-
-/* Contenedor principal */
-
 
 
 
@@ -391,20 +328,20 @@ main{
 
 /* Contenedor principal */
 .ulist {
-  width: 250px;
+  width: 300px;
 }
 
 /* Estilo de los botones del menú */
 .ulist button {
   width: 100%;
-  font-weight: bold;
-  font-size: 22px;
-  padding: 16px;
-  background: linear-gradient(to bottom, #232526, #414345);
-  border: 1px solid rgba(0, 0, 0, 0.78);
+  font-size: 20px;
+  padding: 8px 20px;
+  padding-left: 0;
+  margin: 5px;
+  background: white;
   text-align: left;
-  color: aliceblue;
   cursor: pointer;
+  border: none;
 }
 
 /* Efecto visual al hacer foco en el botón */
@@ -448,9 +385,9 @@ main{
 
 /* Bordes redondeados para primer y último botón */
 .ulist li:nth-of-type(1) button {
-  border-radius: 0 22px 0 0;
+ 
 }
 
 .ulist li:nth-last-of-type(1) button {
-  border-radius: 0 0 22px 0;
+  
 }
