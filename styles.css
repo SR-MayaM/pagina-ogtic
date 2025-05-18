@@ -527,3 +527,168 @@ h4{
 
 
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+  .cabezero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    font-size: 0.45rem;
+  }
+
+  .cabezero img {
+    width: 18px;
+    height: 14px;
+  }
+
+  .cabezero p a {
+    font-size: 0.5rem;
+  }
+
+  #Busqueda {
+    flex-direction: column;
+    padding: 0 1rem;
+    align-items: flex-start;
+  }
+
+  #Busqueda img {
+    width: 140px;
+    padding-left: 0;
+  }
+
+  .barrita1 {
+    width: 100%;
+    margin: 1rem 0;
+    margin-left: 0;
+    flex-direction: row;
+    padding-right: 20px;
+  }
+
+  .barrita1 input {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .barrita1 div {
+    position: absolute;
+    right: 10px;
+    margin-left: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 1rem;
+    align-items: flex-start;
+  }
+
+  nav a {
+    font-size: 0.7rem;
+  }
+
+  .main-contenedor {
+    flex-direction: column;
+    margin: 20px 1rem;
+  }
+
+  .aside,
+  .comunicacion {
+    width: 100%;
+    margin-left: 0;
+    border: none;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .Transp-digital {
+    align-items: center;
+  }
+
+  .Transp-digital img {
+    width: 180px;
+    height: auto;
+  }
+
+  .Transp-digital a {
+    font-size: 13px;
+  }
+
+  .info p {
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  .credenciales {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .contactanos,
+  .credencial-container {
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    gap: 10px;
+  }
+
+  .c {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .certificaciones {
+    margin: 0 1rem;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .certificacion {
+    font-size: 40px;
+  }
+
+  .footer-container .derechos {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .siguenos {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .ulist {
+    width: 100%;
+  }
+
+  .ulist button {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  .ulist li ul li a {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
