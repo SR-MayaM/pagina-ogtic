@@ -475,6 +475,7 @@ h4{
  margin: 0px 7%;
  padding: 30px;
  color: #003869;
+ padding-bottom: 5px;
 }
 
 .certificaciones span{
@@ -491,6 +492,36 @@ h4{
 
 .certificacion-container{
     margin-top: 20px;
+}
+
+.footer-container{
+    
+    padding: 20px 0px;
+    background-color:  #003869;
+    color: white;
+   
+   
+}
+
+.derechos{
+    margin: 0px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siguenos{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siguenos a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 17px;
 }
 
 
