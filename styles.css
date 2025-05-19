@@ -329,7 +329,7 @@ main{
 
 
 
-/* Eliminar puntos y márgenes/paddings de listas */
+
 .ulist,
 .ulist li,
 .ulist ul {
@@ -338,12 +338,12 @@ main{
   padding: 0;
 }
 
-/* Contenedor principal */
+
 .ulist {
   width: 300px;
 }
 
-/* Estilo de los botones del menú */
+
 .ulist button {
   width: 100%;
   font-size: 20px;
@@ -357,26 +357,25 @@ main{
   transition: .04s;
 }
 
-/* Efecto visual al hacer foco en el botón */
+
 .ulist button:focus {
   background: rgba(153, 198, 240, 0.2);
   border-right: solid 4px #003865;
 }
 
-/* Estilo de los submenús ocultos por defecto */
+
 .ulist button + ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.25s ease-out;
 }
 
-/* Mostrar submenús cuando el botón recibe foco */
+
 .ulist button:focus + ul {
   max-height: 1400px;
   transition: max-height 1s;
 }
 
-/* Estilo de enlaces dentro de los submenús */
 .ulist li ul li a {
   display: block;
   font-size: 22px;
@@ -386,13 +385,13 @@ main{
   text-decoration: none;
 }
 
-/* Hover sobre enlaces */
+
 .ulist li ul li a:hover {
   background-color: rgba(153, 198, 240, 0.2);
   color: #003865;
 }
 
-/* Espacio para íconos si se usan */
+
 .ulist i {
   margin: 0 8px;
 }
