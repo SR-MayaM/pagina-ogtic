@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Document</title>
 </head>
+
 <body>
 
 
-<header>
-    <div class="cabezero">
-        <img src="images/do.png" alt="">
-        <p>Esta es una pagina web oficial del Gobierno de la República Dominicana. <a href="">Así es como puedes saberlo.</a></p>
-    </div>
-        
-
-        <section id="Busqueda">
-            <img src="images/logo-nuevo.png" alt="">
-            <div class="barrita1">
-                <input type="text" placeholder="Qué quieres buscar?">
-                <div><svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg></div>
+    <header>
+        <div class="cabezero">
+            <img src="images/do.png" alt="">
+            <p>Esta es una pagina web oficial del Gobierno de la República Dominicana. <a href="">Así es como puedes
+            saberlo.</a></p>
+        </div>
+        <SEction class="busqueda">
+            <div><img src="images/logo-nuevo.png" alt="" class="logo-nuevo"></div>
+            <div class="cosa">
+                <div class="buscador1">
+                    <input type="text" class="buscador" placeholder="Qué quieres buscar?">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                </div>
+                <div class="cuadro">
+                    <a href="#"> <i class="bi bi-grid-3x3-gap-fill"></i></a>
+                </div>
             </div>
 
-            <div class="cuadro">
-                <svg id="cuadricula" width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0" y="0" width="30" height="30" fill="#003366"/>
-                    <rect x="45" y="0" width="30" height="30" fill="#003366"/>
-                    <rect x="90" y="0" width="30" height="30" fill="#003366"/>
-                
-                    <rect x="0" y="45" width="30" height="30" fill="#003366"/>
-                    <rect x="45" y="45" width="30" height="30" fill="#003366"/>
-                    <rect x="90" y="45" width="30" height="30" fill="#003366"/>
-                
-                    <rect x="0" y="90" width="30" height="30" fill="#003366"/>
-                    <rect x="45" y="90" width="30" height="30" fill="#003366"/>
-                    <rect x="90" y="90" width="30" height="30" fill="#003366"/>
-                </svg>
-            </div>
-        </section>
-
+        </SEction>
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre nosotros">Sobre nosotros</a>
-            <select name="servicio" id="servicio" onchange="redirigir()">
+            <a href="#inicio" class="azul">Inicio</a>
+            <a href="#sobre nosotros" class="azul">Sobre nosotros</a>
+            <select name="servicio" id="servicio" onchange="redirigir()" class="azul">
                 <option value="inicio.html">servicio</option>
-                <option value="formulario.html">agenda</option>
+                <option value="formulario.html" class="azul">agenda</option>
                 <script src="nav.js"></script>
             </select>
-            <a href="#firma digital">Firma digital</a>
-            <a href="#atecion ciudadana">Atención ciudadana</a>
-            <a href="#normativas">Normativas</a>
-            <a href="#centro de datos">Centro de datos</a>
-            <a href="#trasparencia">Transparencia</a>
-            <a href="#sala de prensa">Sala de prensa</a>
-            <a href="#buzon sugerencia">Buzón Sugerencias</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#firma digital" class="azul">Firma digital</a>
+            <a href="#atecion ciudadana" class="azul">Atención ciudadana</a>
+            <a href="#normativas" class="azul">Normativas</a>
+            <a href="#centro de datos" class="azul">Centro de datos</a>
+            <a href="#trasparencia" class="azul">Transparencia</a>
+            <a href="#sala de prensa" class="azul">Sala de prensa</a>
+            <a href="#buzon sugerencia" class="azul">Buzón Sugerencias</a>
+            <a href="#contacto" class="azul">Contacto</a>
         </nav>
     </header>
 
@@ -75,24 +63,24 @@
 
 
     <section class="fondo">
-       <div class="mrg">
+        <div class="mrg">
             <div class="container">
 
                 <a href="">Transparencia</a>
                 <div class="barrita">/</div>
-                
+
             </div>
             <div>
                 <h1>Inicio</h1>
             </div>
-       </div>
+        </div>
 
     </section>
 
     <section class="main-contenedor">
 
         <aside class="aside">
-           <ul class="ulist">
+            <ul class="ulist">
                 <li>
                     <button>Inicio</button>
                 </li>
@@ -110,23 +98,26 @@
                 </li>
 
                 <li>
-                    <button class="boton-flecha">Oficina de Libre Acceso a la Información (OAI)<i class="bi bi-chevron-down"></i></button>
+                    <button class="boton-flecha">Oficina de Libre Acceso a la Información (OAI)<i
+                            class="bi bi-chevron-down"></i></button>
                     <ul>
-                     <li><a href="#">Derechos de los Ciudadanos de Acceder a la Información Pública</a></li>
-                     <li><a href="#">Estructura organizacional de la OAI</a></li>
-                     <li><a href="#">Manual de organización de la OAI</a></li>
-                     <li><a href="#">Manual de procedimientos de la OAI</a></li>
-                     <li><a href="#">Estadísticas y balances de la gestión OAI</a></li>
-                     <li><a href="#">Responsable de Libre Acceso a la Información</a></li>
-                     <li><a href="#">Resolución de Información clasificada</a></li>
-                     <li><a href="#">Índice de documentos disponibles para la entrega</a></li>
-                     <li><a href="#">Portal Único de Solicitud de Información Pública (SAIP)</a></li>
-                     <li><a href="#">Índice de Transparencia Estandarizado</a></li>
+                        <li><a href="#">Derechos de los Ciudadanos de Acceder a la Información Pública</a></li>
+                        <li><a href="#">Estructura organizacional de la OAI</a></li>
+                        <li><a href="#">Manual de organización de la OAI</a></li>
+                        <li><a href="#">Manual de procedimientos de la OAI</a></li>
+                        <li><a href="#">Estadísticas y balances de la gestión OAI</a></li>
+                        <li><a href="#">Responsable de Libre Acceso a la Información</a></li>
+                        <li><a href="#">Resolución de Información clasificada</a></li>
+                        <li><a href="#">Índice de documentos disponibles para la entrega</a></li>
+                        <li><a href="#">Portal Único de Solicitud de Información Pública (SAIP)</a></li>
+                        <li><a href="#">Índice de Transparencia Estandarizado</a></li>
                     </ul>
                 </li>
                 <li>
-                    <button class="boton-flecha">Plan Estrategico Institucional <i class="bi bi-chevron-down"></i></button>
-                    <ul><li><a href="#">Plan Estratégico Institucional</a></li>
+                    <button class="boton-flecha">Plan Estrategico Institucional <i
+                            class="bi bi-chevron-down"></i></button>
+                    <ul>
+                        <li><a href="#">Plan Estratégico Institucional</a></li>
                         <li><a href="#">Planificación Estratégica Institucional</a></li>
                         <li><a href="#">Plan Operativo Anual (POA)</a></li>
                         <li><a href="#">Memorias Institucional</a></li>
@@ -138,7 +129,8 @@
                 <li><button>Publicaciones Oficiales</button></li>
                 <li><button>Estadísticas Institucionales</button></li>
                 <li>
-                    <button class="boton-flecha">Información básica sobre Servicios Públicos <i class="bi bi-chevron-down"></i></button>
+                    <button class="boton-flecha">Información básica sobre Servicios Públicos <i
+                            class="bi bi-chevron-down"></i></button>
                     <ul>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Carta de Compromiso al Ciudadano</a></li>
@@ -147,13 +139,16 @@
 
 
                 <li>
-                    <button class="boton-flecha">Acceso y Registro al Portal 311 sobre Quejas, Reclamaciones, Sugerencias y Denuncias <i class="bi bi-chevron-down"></i></button>
+                    <button class="boton-flecha">Acceso y Registro al Portal 311 sobre Quejas, Reclamaciones,
+                        Sugerencias y Denuncias <i class="bi bi-chevron-down"></i></button>
                     <ul>
-                        <li><a href="#">Acceso y Registro al Portal 311 sobre Quejas, Reclamaciones, Sugerencias y Denuncias</a></li>
-                        <li><a href="#">Estadísticas Trimestrales de las Quejas, Reclamaciones y Sugerencias recibidas a través de 311</a></li>
+                        <li><a href="#">Acceso y Registro al Portal 311 sobre Quejas, Reclamaciones, Sugerencias y
+                                Denuncias</a></li>
+                        <li><a href="#">Estadísticas Trimestrales de las Quejas, Reclamaciones y Sugerencias recibidas a
+                                través de 311</a></li>
                     </ul>
                 </li>
-               
+
                 <li><button>Declaraciones Juradas de Patrimonio (DJP)</button></li>
 
 
@@ -175,7 +170,8 @@
                 <li>
                     <button class="boton-flecha">Recursos Humanos <i class="bi bi-chevron-down"></i></button>
                     <ul>
-                        <li><a href="#">Link al Portal Concursa administrado por el Ministerio de Adiministración Pública (MAP)</a></li>
+                        <li><a href="#">Link al Portal Concursa administrado por el Ministerio de Adiministración
+                                Pública (MAP)</a></li>
                         <li><a href="#">Nómina</a></li>
                         <li><a href="#">Jubilaciones, Pensiones y Retiros</a></li>
                     </ul>
@@ -203,7 +199,8 @@
                         <li><a href="#">Micro pequeñas y medianas empresas</a></li>
                         <li><a href="#">Casos de seguridad y emergencia nacional</a></li>
                         <li><a href="#">Casos de urgencias</a></li>
-                        <li><a href="#">Procesos de excepción indicados en el Reglamento de Aplicación núm. 418-23</a></li>
+                        <li><a href="#">Procesos de excepción indicados en el Reglamento de Aplicación núm. 418-23</a>
+                        </li>
                         <li><a href="#">Relación de estado de cuentas de suplidores</a></li>
                         <li><a href="#">Sistema Electrónico de Contrataciones Públicas</a></li>
                     </ul>
@@ -240,24 +237,26 @@
                         <li><a href="#">Nómina – Datos Abiertos 2018 a 2023</a></li>
                         <li><a href="#">Estadísticas Oficina Acceso a la Información (OAI) 2018-2025</a></li>
                         <li><a href="#">Estadísticas Centro de Contacto Gubernamental (CCG) 2017-2025</a></li>
-                        <li><a href="#">Histórico índice de uso de TIC e implementación de e-Gob en el Estado Dominicano (ITICge) 2015-2023</a></li>
-                    
+                        <li><a href="#">Histórico índice de uso de TIC e implementación de e-Gob en el Estado Dominicano
+                                (ITICge) 2015-2023</a></li>
+
                     </ul>
                 </li>
                 <li>
-                    <button class="boton-flecha">Comisión de Integridad y Cumplimiento Normativo <i class="bi bi-chevron-down"></i></button> 
+                    <button class="boton-flecha">Comisión de Integridad y Cumplimiento Normativo <i
+                            class="bi bi-chevron-down"></i></button>
                     <ul>
                         <li><a href="#">Comision de Integridad 2022-2025</a></li>
                         <li><a href="#">Compromiso Ético</a></li>
                         <li><a href="#">Plan de trabajo final 2024- CIGCN</a></li>
                         <li><a href="#">Histórico CEP</a></li>
-                       
+
                     </ul>
                 </li>
                 <li>
                     <button class="boton-flecha">Consulta Publica <i class="bi bi-chevron-down"></i></button>
                     <ul>
-                        <li><a href="#">Proceso de consultas abiertas</a></li>
+                        <li><a href="#" >Proceso de consultas abiertas</a></li>
                         <li><a href="#">Relación de consultas públicas</a></li>
                     </ul>
                 </li>
@@ -265,15 +264,15 @@
             </ul>
 
 
-            
+
         </aside>
         <article class="comunicacion">
             <div class="iconos">
-                
-                
-                <a href="#"  > <i class="bi bi-envelope-fill icon" ></i></a>
+
+
+                <a href="#"> <i class="bi bi-envelope-fill icon"></i></a>
                 <a href="#"><i class="bi bi-printer-fill icon"></i></a>
-                <a href="#"><i class="bi bi-facebook icon" ></i></a>
+                <a href="#"><i class="bi bi-facebook icon"></i></a>
                 <a href="#"><i class="bi bi-twitter-x icon"></i></a>
                 <a href="#"><i class="bi bi-whatsapp icon"></i></a>
             </div>
@@ -281,29 +280,30 @@
                 <div>
                     <img src="images/MicrosoftTeams-image-1-scaled-e1705594059871.jpeg" alt="" class="img">
                 </div>
-               <div class="Transp-digital">
-                    <a href="" class="lin" >
+                <div class="Transp-digital">
+                    <a href="" class="lin">
                         <strong>Bienvenido al Portal de Transparencia</strong>
                         <img src="images/Imagen de WhatsApp 2025-05-16 a las 11.41.58_3da68c0e.jpg" alt="">
                     </a>
-               </div>
+                </div>
             </div>
             <section class="info">
                 <p>
-                    En este portal interactivo hacemos disponible todo 
+                    En este portal interactivo hacemos disponible todo
                     lo requerido en la Ley General de Libre Acceso a la Información
                     Pública Ley 200-04 y el Decreto No. 130-05 que crea el reglamento
-                    de la ley. 
+                    de la ley.
                 </p>
                 <p>
-                    <strong class="negrita">Artículo 5.- </strong>«Se dispone la informatización y la incorporación al 
+                    <strong class="negrita">Artículo 5.- </strong>«Se dispone la informatización y la incorporación al
                     sistema de comunicación por Internet, o a cualquier otro sistema similar que en
-                    el futuro se establezca, de todos los organismos públicos centralizados y descentralizados del Estado,
+                    el futuro se establezca, de todos los organismos públicos centralizados y descentralizados del
+                    Estado,
                     incluyendo el Distrito Nacional y los Municipios, con la finalidad de garantizar a través de éste
                     un acceso directo del público a la información del Estado.»
                 </p>
                 <p>
-                    Todos los poderes y organismos del Estado deberán instrumentar 
+                    Todos los poderes y organismos del Estado deberán instrumentar
                     la publicación de sus respectivas
                     «Páginas Web» a los siguientes fines:
 
@@ -311,7 +311,8 @@
 
                 <p>
                     <strong class="negrita">• Difusión de Información:</strong> <br> <br>
-                    Estructura, integrantes, normativas de funcionamiento, proyectos, informes de gestión, base de datos;
+                    Estructura, integrantes, normativas de funcionamiento, proyectos, informes de gestión, base de
+                    datos;
                 </p>
 
                 <p>
@@ -321,24 +322,27 @@
 
                 <p>
                     <strong class="negrita">• Trámites o Transacciones Bilaterales:</strong> <br> <br>
-                    «La información a que hace referencia el párrafo anterior será de libre acceso al público sin necesidad de petición previa».
+                    «La información a que hace referencia el párrafo anterior será de libre acceso al público sin
+                    necesidad de petición previa».
                 </p>
                 <p>
-                    <strong class="negrita">«Nuestro Portal cumple con las especificaciones contempladas en la Ley 200-04, la cual establece la actualización permanente de las informaciones ofrecidas en el mismo».</strong>
+                    <strong class="negrita">«Nuestro Portal cumple con las especificaciones contempladas en la Ley
+                        200-04, la cual establece la actualización permanente de las informaciones ofrecidas en el
+                        mismo».</strong>
                 </p>
             </section>
         </article>
     </section>
     <section class="credenciales">
-       <div class="credencial-container">
+        <div class="credencial-container">
             <div>
                 <img src="images/logo-nuevo.png" alt="" class="credencial-img ">
             </div>
             <div>
                 <img src="images/Logo-gobierno-de-la-republica-dominicana-azul.png" alt="" class="credencial-img ">
             </div>
-       </div>
-       <div class="contactanos">
+        </div>
+        <div class="contactanos">
             <div class="c">
                 <h4>CONÓCENOS</h4>
                 <p>
@@ -363,17 +367,17 @@
             </div>
             <div class="c">
                 <h4>INFÓRMATE</h4>
-              <a href="#" class="politic">Términos de Uso</a> <br><br>
-              <a href="#" class="politic">Políticas de Privacidad</a><br><br>
-              <a href="#" class="politic">Preguntas Frecuentes</a><br><br>
+                <a href="#" class="politic">Términos de Uso</a> <br><br>
+                <a href="#" class="politic">Políticas de Privacidad</a><br><br>
+                <a href="#" class="politic">Preguntas Frecuentes</a><br><br>
             </div>
-       </div>
+        </div>
     </section>
 
     <footer>
         <div class="certificaciones">
-           <span>Certificaciones Obtenidas</span>
-            
+            <span>Certificaciones Obtenidas</span>
+
             <div class="certificacion-container">
                 <a href="#" class="certificacion"><i class="bi bi-1-circle-fill"></i></a>
                 <a href="#" class="certificacion"><i class="bi bi-1-circle-fill"></i></a>
@@ -381,11 +385,11 @@
                 <a href="#" class="certificacion"><i class="bi bi-1-circle-fill"></i></a>
                 <a href="#" class="certificacion"><i class="bi bi-1-circle-fill"></i></a>
             </div>
-           
+
         </div>
         <div class="footer-container">
-            
-           <div class="derechos">
+
+            <div class="derechos">
                 <div>
                     <p>© 2025 Todos los Derechos Reservados. Desarrollado por</p>
                 </div>
@@ -400,10 +404,11 @@
                         <a href="#">logo Flickr</a>
                     </div>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
 
 
 </body>
+
 </html>
