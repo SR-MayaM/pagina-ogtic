@@ -113,6 +113,8 @@ body {
   border-radius: 50px;
   padding: 10px 40px;
 
+
+
 }
 
 .cosa {
@@ -637,15 +639,19 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 10px;
   }
 
   .buscador {
    display: none;
   }
 
+  .cosa{
+    display: flex;
+  }
+
   .buscador1{
-    display: none;
+    transform: translateX(110%);
   }
 
   .logo-nuevo{
@@ -657,8 +663,25 @@ h4 {
   }
 
   .cuadro i{
-   
-   
+   margin: 10px;
+   padding: 0;
+   font-size: 30px;
+  }
+
+
+
+  .mrg{
+    display: flex;
+    align-items: center;
+  }
+
+  .mrg div{
+    margin: 10px;
+  }
+
+  .container{
+    display: flex;
+    text-align: start;
   }
 
   
@@ -700,10 +723,11 @@ h4 {
   }
 
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     margin: 15px 1rem;
     align-items: flex-start;
+    display: none;
   }
 
   nav a {
@@ -729,7 +753,7 @@ h4 {
   }
 
   .container {
-    flex-direction: column;
+    flex-direction: row;
     font-size: 15px;
     text-align: center;
   }
@@ -753,19 +777,48 @@ h4 {
   }
 
   .credenciales {
-    flex-direction: column;
+   display: grid;
     padding: 20px;
     text-align: center;
     margin-top: 40px;
   }
 
-  .contactanos,
+  
   .credencial-container {
-    flex-direction: column;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
     border: none;
     gap: 10px;
+    align-items:center ;
   }
+
+  .credencial-img{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 20px;
+  }
+
+
+
+
+
+  .contactanos{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    margin: 0;
+    font-size: 15px;
+    gap: 8px;
+  }
+
+
+
+
+
+
+
 
   .c {
    
