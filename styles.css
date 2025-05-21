@@ -1,3 +1,15 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  max-width: 100%;
+  
+}
+
+
+
+
 .cabezero {
   display: flex;
   align-items: center;
@@ -34,6 +46,7 @@
   padding-bottom: 10px;
   border-bottom: 2px solid #a6a6a6;
   padding: 0 2rem;
+ 
 
 }
 
@@ -91,6 +104,7 @@
   align-items: center;
   margin: 0px 6%;
   margin-bottom: 20px;
+ 
 }
 
 .buscador {
@@ -136,7 +150,7 @@
   color: white;
 }
 
-*/ #cuadricula {
+ #cuadricula {
   width: 50px;
   height: 30px;
   margin-left: 5px;
@@ -221,11 +235,6 @@ nav a:hover {
 
 
 
-
-* {
-  margin: 0;
-  font-family: sans-serif;
-}
 
 
 .transparencia {
@@ -606,12 +615,13 @@ h4 {
 
 
 
-/* 
+
 @media (max-width: 600px) {
   .cabezero {
     display: flex;
     justify-content: space-between;
     font-size: 0.45rem;
+    padding:0 ;
   }
 
   .cabezero img {
@@ -623,11 +633,44 @@ h4 {
     font-size: 0.5rem;
   }
 
-  .Busqueda {
-   display: flex;
-   justify-content: space-between; 
+  .busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .buscador {
+   display: none;
+  }
+
+  .buscador1{
+    display: none;
+  }
+
+  .logo-nuevo{
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
+    width: 110px;
+    height: 110px;
+  }
+
+  .cuadro i{
+   
    
   }
+
+  
+
+
+
+
+
+
+
+
+  
 
  
 
@@ -725,8 +768,9 @@ h4 {
   }
 
   .c {
-    margin: 10px;
+   
     width: 100%;
+    
   }
 
   .certificaciones {
@@ -752,7 +796,7 @@ h4 {
   }
 
   .ulist {
-    width: 100%;
+    max-width: 100%;
   }
 
   .ulist button {
@@ -764,7 +808,7 @@ h4 {
     font-size: 16px;
     padding: 10px;
   }
-} */
+} 
 
 
 
@@ -772,44 +816,3 @@ h4 {
 
 
 
-
-
-@media (min-width: 359px) {
-  .cabezero {
-    padding: 0;
-  }
-
-
-
-  .cabezero p {
-    padding-left: 2px;
-  }
-
-
-  .busqueda {
-    margin: 0;
-    margin-left: 10px;
-    height: auto;
-    display: flex;
-    align-items: center;
-  }
-
-
-
-
-  .logo-nuevo {
-    padding: 0;
-    width: 100px;
-    ;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .cabezero p {
-    font-size: 0.45rem;
-  }
-
-  .Busqueda {}
-
-  #Busqueda img {}
-}
