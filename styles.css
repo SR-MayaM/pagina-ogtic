@@ -1,10 +1,9 @@
-
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   max-width: 100%;
-  
+
 }
 
 
@@ -46,7 +45,7 @@ body {
   padding-bottom: 10px;
   border-bottom: 2px solid #a6a6a6;
   padding: 0 2rem;
- 
+
 
 }
 
@@ -104,7 +103,7 @@ body {
   align-items: center;
   margin: 0px 6%;
   margin-bottom: 20px;
- 
+
 }
 
 .buscador {
@@ -152,7 +151,7 @@ body {
   color: white;
 }
 
- #cuadricula {
+#cuadricula {
   width: 50px;
   height: 30px;
   margin-left: 5px;
@@ -404,6 +403,15 @@ main {
 }
 
 
+.ulist a {
+  text-decoration: none;
+  color: black;
+}
+
+.ulist button:hover {
+  background-color: rgba(153, 198, 240, 0.2);
+  transition: .3s;
+}
 
 
 
@@ -618,12 +626,116 @@ h4 {
 
 
 
+
+
+
+/*seccion de carpetas*/
+
+
+
+
+
+
+
+.carpetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ESTILOS ORIGINALES DE TUS CARPETAS (conservados) */
+.carpeta1 {
+  flex: 1 1 calc(50% - 20px);
+  /* Crea 2 columnas restando el gap */
+  min-width: 150px;
+  /* Ancho mínimo antes de wrap */
+  max-width: calc(50% - 20px);
+  /* Máximo 2 por fila */
+
+  /* Tus estilos originales */
+  height: 180px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+/* MANTENIENDO TUS ESTILOS HOVER ORIGINALES */
+.carpeta1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ICONO (conservando tu estructura) */
+.icono {
+  font-size: 50px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.icono i {
+  display: block;
+  text-align: center;
+}
+
+/* INDICADOR (conservando tu estructura) */
+.indicador {
+  text-align: center;
+  color: #34495e;
+}
+
+.indicador b {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.indicador p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* RESPONSIVE: 1 COLUMNA EN MÓVILES */
+@media (max-width: 600px) {
+  .carpeta1 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
   .cabezero {
     display: flex;
     justify-content: space-between;
     font-size: 0.45rem;
-    padding:0 ;
+    padding: 0;
   }
 
   .cabezero img {
@@ -643,18 +755,18 @@ h4 {
   }
 
   .buscador {
-   display: none;
+    display: none;
   }
 
-  .cosa{
+  .cosa {
     display: flex;
   }
 
-  .buscador1{
+  .buscador1 {
     transform: translateX(110%);
   }
 
-  .logo-nuevo{
+  .logo-nuevo {
     padding: 0;
     margin: 0;
     object-fit: contain;
@@ -662,29 +774,28 @@ h4 {
     height: 110px;
   }
 
-  .cuadro i{
-   margin: 10px;
-   padding: 0;
-   font-size: 30px;
+  .cuadro i {
+    margin: 10px;
+    padding: 0;
+    font-size: 30px;
   }
 
 
 
-  .mrg{
+  .mrg {
     display: flex;
     align-items: center;
   }
 
-  .mrg div{
+  .mrg div {
     margin: 10px;
   }
 
-  .container{
+  .container {
     display: flex;
     text-align: start;
   }
 
-  
 
 
 
@@ -693,9 +804,10 @@ h4 {
 
 
 
-  
 
- 
+
+
+
 
   #Busqueda img {
     width: 140px;
@@ -708,7 +820,7 @@ h4 {
     margin-left: 0;
     flex-direction: row;
     padding-right: 20px;
-    
+
   }
 
   .barrita1 input {
@@ -777,23 +889,23 @@ h4 {
   }
 
   .credenciales {
-   display: grid;
+    display: grid;
     padding: 20px;
     text-align: center;
     margin-top: 40px;
   }
 
-  
+
   .credencial-container {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
     border: none;
     gap: 10px;
-    align-items:center ;
+    align-items: center;
   }
 
-  .credencial-img{
+  .credencial-img {
     width: 90px;
     height: 90px;
     object-fit: contain;
@@ -804,10 +916,10 @@ h4 {
 
 
 
-  .contactanos{
+  .contactanos {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: 0;
     font-size: 15px;
     gap: 8px;
@@ -821,9 +933,9 @@ h4 {
 
 
   .c {
-   
+
     width: 100%;
-    
+
   }
 
   .certificaciones {
@@ -833,8 +945,8 @@ h4 {
   }
 
   .certificacion {
-    font-size: 40px; 
-    
+    font-size: 40px;
+
   }
 
   .footer-container .derechos {
@@ -850,6 +962,7 @@ h4 {
 
   .ulist {
     max-width: 100%;
+    display: none;
   }
 
   .ulist button {
@@ -861,11 +974,4 @@ h4 {
     font-size: 16px;
     padding: 10px;
   }
-} 
-
-
-
-
-
-
-
+}
