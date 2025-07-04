@@ -427,7 +427,8 @@ main {
 
 
 .ulist {
-  width: 300px;
+  width: 90%;
+  margin: 0 20px;
 }
 
 
@@ -962,7 +963,7 @@ h4 {
 
   .ulist {
     max-width: 100%;
-    display: none;
+    
   }
 
   .ulist button {
